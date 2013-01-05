@@ -11,6 +11,7 @@ nbproject
 *~
 *.sw[po]
 .eprj
+pkg
 vendor/**/build
 vendor/**/.build
 vendor/**/build-*/
