@@ -1,0 +1,390 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C15B347F16979EDE00FB5EFE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C15B347E16979EDE00FB5EFE /* Foundation.framework */; };
+		C15B348416979EDE00FB5EFE /* MotionOCR.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C15B348316979EDE00FB5EFE /* MotionOCR.h */; };
+		C15B348616979EDE00FB5EFE /* MotionOCR.mm in Sources */ = {isa = PBXBuildFile; fileRef = C15B348516979EDE00FB5EFE /* MotionOCR.mm */; };
+		C15B34C81697A02400FB5EFE /* liblept.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C15B34C61697A02400FB5EFE /* liblept.a */; };
+		C15B34C91697A02400FB5EFE /* libtesseract_all.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C15B34C71697A02400FB5EFE /* libtesseract_all.a */; };
+		C15B34CC1697A04700FB5EFE /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C15B34CA1697A04700FB5EFE /* AVFoundation.framework */; };
+		C15B34CD1697A04700FB5EFE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C15B34CB1697A04700FB5EFE /* CoreGraphics.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C15B347916979EDE00FB5EFE /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				C15B348416979EDE00FB5EFE /* MotionOCR.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C15B347B16979EDE00FB5EFE /* libMotionOCR.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMotionOCR.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C15B347E16979EDE00FB5EFE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C15B348216979EDE00FB5EFE /* MotionOCR-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MotionOCR-Prefix.pch"; sourceTree = "<group>"; };
+		C15B348316979EDE00FB5EFE /* MotionOCR.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MotionOCR.h; sourceTree = "<group>"; };
+		C15B348516979EDE00FB5EFE /* MotionOCR.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; path = MotionOCR.mm; sourceTree = "<group>"; };
+		C15B349B1697A02400FB5EFE /* allheaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = allheaders.h; sourceTree = "<group>"; };
+		C15B349C1697A02400FB5EFE /* alltypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = alltypes.h; sourceTree = "<group>"; };
+		C15B349D1697A02400FB5EFE /* array.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = array.h; sourceTree = "<group>"; };
+		C15B349E1697A02400FB5EFE /* arrayaccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = arrayaccess.h; sourceTree = "<group>"; };
+		C15B349F1697A02400FB5EFE /* bbuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bbuffer.h; sourceTree = "<group>"; };
+		C15B34A01697A02400FB5EFE /* bmf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bmf.h; sourceTree = "<group>"; };
+		C15B34A11697A02400FB5EFE /* bmp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bmp.h; sourceTree = "<group>"; };
+		C15B34A21697A02400FB5EFE /* ccbord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ccbord.h; sourceTree = "<group>"; };
+		C15B34A31697A02400FB5EFE /* dewarp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dewarp.h; sourceTree = "<group>"; };
+		C15B34A41697A02400FB5EFE /* endianness.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = endianness.h; sourceTree = "<group>"; };
+		C15B34A51697A02400FB5EFE /* environ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = environ.h; sourceTree = "<group>"; };
+		C15B34A61697A02400FB5EFE /* freetype.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = freetype.h; sourceTree = "<group>"; };
+		C15B34A71697A02400FB5EFE /* gplot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gplot.h; sourceTree = "<group>"; };
+		C15B34A81697A02400FB5EFE /* heap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = heap.h; sourceTree = "<group>"; };
+		C15B34A91697A02400FB5EFE /* imageio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imageio.h; sourceTree = "<group>"; };
+		C15B34AA1697A02400FB5EFE /* jbclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jbclass.h; sourceTree = "<group>"; };
+		C15B34AB1697A02400FB5EFE /* leptprotos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = leptprotos.h; sourceTree = "<group>"; };
+		C15B34AC1697A02400FB5EFE /* leptwin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = leptwin.h; sourceTree = "<group>"; };
+		C15B34AD1697A02400FB5EFE /* list.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = list.h; sourceTree = "<group>"; };
+		C15B34AE1697A02400FB5EFE /* morph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = morph.h; sourceTree = "<group>"; };
+		C15B34AF1697A02400FB5EFE /* pix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pix.h; sourceTree = "<group>"; };
+		C15B34B01697A02400FB5EFE /* ptra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ptra.h; sourceTree = "<group>"; };
+		C15B34B11697A02400FB5EFE /* queue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = queue.h; sourceTree = "<group>"; };
+		C15B34B21697A02400FB5EFE /* readbarcode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = readbarcode.h; sourceTree = "<group>"; };
+		C15B34B31697A02400FB5EFE /* regutils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = regutils.h; sourceTree = "<group>"; };
+		C15B34B41697A02400FB5EFE /* stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stack.h; sourceTree = "<group>"; };
+		C15B34B51697A02400FB5EFE /* sudoku.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sudoku.h; sourceTree = "<group>"; };
+		C15B34B61697A02400FB5EFE /* watershed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = watershed.h; sourceTree = "<group>"; };
+		C15B34B81697A02400FB5EFE /* apitypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = apitypes.h; sourceTree = "<group>"; };
+		C15B34B91697A02400FB5EFE /* baseapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = baseapi.h; sourceTree = "<group>"; };
+		C15B34BA1697A02400FB5EFE /* errcode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = errcode.h; sourceTree = "<group>"; };
+		C15B34BB1697A02400FB5EFE /* genericvector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = genericvector.h; sourceTree = "<group>"; };
+		C15B34BC1697A02400FB5EFE /* helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = helpers.h; sourceTree = "<group>"; };
+		C15B34BD1697A02400FB5EFE /* host.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = host.h; sourceTree = "<group>"; };
+		C15B34BE1697A02400FB5EFE /* ndminx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ndminx.h; sourceTree = "<group>"; };
+		C15B34BF1697A02400FB5EFE /* ocrclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ocrclass.h; sourceTree = "<group>"; };
+		C15B34C01697A02400FB5EFE /* platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = platform.h; sourceTree = "<group>"; };
+		C15B34C11697A02400FB5EFE /* publictypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = publictypes.h; sourceTree = "<group>"; };
+		C15B34C21697A02400FB5EFE /* tesscallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tesscallback.h; sourceTree = "<group>"; };
+		C15B34C31697A02400FB5EFE /* thresholder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = thresholder.h; sourceTree = "<group>"; };
+		C15B34C41697A02400FB5EFE /* unichar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unichar.h; sourceTree = "<group>"; };
+		C15B34C61697A02400FB5EFE /* liblept.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = liblept.a; sourceTree = "<group>"; };
+		C15B34C71697A02400FB5EFE /* libtesseract_all.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libtesseract_all.a; sourceTree = "<group>"; };
+		C15B34CA1697A04700FB5EFE /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		C15B34CB1697A04700FB5EFE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C15B347816979EDE00FB5EFE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C15B34CC1697A04700FB5EFE /* AVFoundation.framework in Frameworks */,
+				C15B34CD1697A04700FB5EFE /* CoreGraphics.framework in Frameworks */,
+				C15B347F16979EDE00FB5EFE /* Foundation.framework in Frameworks */,
+				C15B34C81697A02400FB5EFE /* liblept.a in Frameworks */,
+				C15B34C91697A02400FB5EFE /* libtesseract_all.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C15B347016979EDE00FB5EFE = {
+			isa = PBXGroup;
+			children = (
+				C15B34CA1697A04700FB5EFE /* AVFoundation.framework */,
+				C15B34CB1697A04700FB5EFE /* CoreGraphics.framework */,
+				C15B348016979EDE00FB5EFE /* MotionOCR */,
+				C15B347D16979EDE00FB5EFE /* Frameworks */,
+				C15B347C16979EDE00FB5EFE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C15B347C16979EDE00FB5EFE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C15B347B16979EDE00FB5EFE /* libMotionOCR.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C15B347D16979EDE00FB5EFE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C15B347E16979EDE00FB5EFE /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C15B348016979EDE00FB5EFE /* MotionOCR */ = {
+			isa = PBXGroup;
+			children = (
+				C15B34981697A02400FB5EFE /* dependencies */,
+				C15B348316979EDE00FB5EFE /* MotionOCR.h */,
+				C15B348516979EDE00FB5EFE /* MotionOCR.mm */,
+				C15B348116979EDE00FB5EFE /* Supporting Files */,
+			);
+			path = MotionOCR;
+			sourceTree = "<group>";
+		};
+		C15B348116979EDE00FB5EFE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C15B348216979EDE00FB5EFE /* MotionOCR-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C15B34981697A02400FB5EFE /* dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				C15B34991697A02400FB5EFE /* include */,
+				C15B34C51697A02400FB5EFE /* lib */,
+			);
+			name = dependencies;
+			path = build_dependencies/dependencies;
+			sourceTree = "<group>";
+		};
+		C15B34991697A02400FB5EFE /* include */ = {
+			isa = PBXGroup;
+			children = (
+				C15B349A1697A02400FB5EFE /* leptonica */,
+				C15B34B71697A02400FB5EFE /* tesseract */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		C15B349A1697A02400FB5EFE /* leptonica */ = {
+			isa = PBXGroup;
+			children = (
+				C15B349B1697A02400FB5EFE /* allheaders.h */,
+				C15B349C1697A02400FB5EFE /* alltypes.h */,
+				C15B349D1697A02400FB5EFE /* array.h */,
+				C15B349E1697A02400FB5EFE /* arrayaccess.h */,
+				C15B349F1697A02400FB5EFE /* bbuffer.h */,
+				C15B34A01697A02400FB5EFE /* bmf.h */,
+				C15B34A11697A02400FB5EFE /* bmp.h */,
+				C15B34A21697A02400FB5EFE /* ccbord.h */,
+				C15B34A31697A02400FB5EFE /* dewarp.h */,
+				C15B34A41697A02400FB5EFE /* endianness.h */,
+				C15B34A51697A02400FB5EFE /* environ.h */,
+				C15B34A61697A02400FB5EFE /* freetype.h */,
+				C15B34A71697A02400FB5EFE /* gplot.h */,
+				C15B34A81697A02400FB5EFE /* heap.h */,
+				C15B34A91697A02400FB5EFE /* imageio.h */,
+				C15B34AA1697A02400FB5EFE /* jbclass.h */,
+				C15B34AB1697A02400FB5EFE /* leptprotos.h */,
+				C15B34AC1697A02400FB5EFE /* leptwin.h */,
+				C15B34AD1697A02400FB5EFE /* list.h */,
+				C15B34AE1697A02400FB5EFE /* morph.h */,
+				C15B34AF1697A02400FB5EFE /* pix.h */,
+				C15B34B01697A02400FB5EFE /* ptra.h */,
+				C15B34B11697A02400FB5EFE /* queue.h */,
+				C15B34B21697A02400FB5EFE /* readbarcode.h */,
+				C15B34B31697A02400FB5EFE /* regutils.h */,
+				C15B34B41697A02400FB5EFE /* stack.h */,
+				C15B34B51697A02400FB5EFE /* sudoku.h */,
+				C15B34B61697A02400FB5EFE /* watershed.h */,
+			);
+			path = leptonica;
+			sourceTree = "<group>";
+		};
+		C15B34B71697A02400FB5EFE /* tesseract */ = {
+			isa = PBXGroup;
+			children = (
+				C15B34B81697A02400FB5EFE /* apitypes.h */,
+				C15B34B91697A02400FB5EFE /* baseapi.h */,
+				C15B34BA1697A02400FB5EFE /* errcode.h */,
+				C15B34BB1697A02400FB5EFE /* genericvector.h */,
+				C15B34BC1697A02400FB5EFE /* helpers.h */,
+				C15B34BD1697A02400FB5EFE /* host.h */,
+				C15B34BE1697A02400FB5EFE /* ndminx.h */,
+				C15B34BF1697A02400FB5EFE /* ocrclass.h */,
+				C15B34C01697A02400FB5EFE /* platform.h */,
+				C15B34C11697A02400FB5EFE /* publictypes.h */,
+				C15B34C21697A02400FB5EFE /* tesscallback.h */,
+				C15B34C31697A02400FB5EFE /* thresholder.h */,
+				C15B34C41697A02400FB5EFE /* unichar.h */,
+			);
+			path = tesseract;
+			sourceTree = "<group>";
+		};
+		C15B34C51697A02400FB5EFE /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				C15B34C61697A02400FB5EFE /* liblept.a */,
+				C15B34C71697A02400FB5EFE /* libtesseract_all.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C15B347A16979EDE00FB5EFE /* MotionOCR */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C15B348916979EDE00FB5EFE /* Build configuration list for PBXNativeTarget "MotionOCR" */;
+			buildPhases = (
+				C15B347716979EDE00FB5EFE /* Sources */,
+				C15B347816979EDE00FB5EFE /* Frameworks */,
+				C15B347916979EDE00FB5EFE /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MotionOCR;
+			productName = MotionOCR;
+			productReference = C15B347B16979EDE00FB5EFE /* libMotionOCR.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C15B347216979EDE00FB5EFE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = com.ferdev;
+			};
+			buildConfigurationList = C15B347516979EDE00FB5EFE /* Build configuration list for PBXProject "MotionOCR" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C15B347016979EDE00FB5EFE;
+			productRefGroup = C15B347C16979EDE00FB5EFE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C15B347A16979EDE00FB5EFE /* MotionOCR */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C15B347716979EDE00FB5EFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C15B348616979EDE00FB5EFE /* MotionOCR.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C15B348716979EDE00FB5EFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C15B348816979EDE00FB5EFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C15B348A16979EDE00FB5EFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/MotionOCR.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MotionOCR/MotionOCR-Prefix.pch";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/MotionOCR/build_dependencies/dependencies/lib\"",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		C15B348B16979EDE00FB5EFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/MotionOCR.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MotionOCR/MotionOCR-Prefix.pch";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/MotionOCR/build_dependencies/dependencies/lib\"",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C15B347516979EDE00FB5EFE /* Build configuration list for PBXProject "MotionOCR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C15B348716979EDE00FB5EFE /* Debug */,
+				C15B348816979EDE00FB5EFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C15B348916979EDE00FB5EFE /* Build configuration list for PBXNativeTarget "MotionOCR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C15B348A16979EDE00FB5EFE /* Debug */,
+				C15B348B16979EDE00FB5EFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C15B347216979EDE00FB5EFE /* Project object */;
+}
