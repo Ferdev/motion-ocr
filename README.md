@@ -10,6 +10,10 @@ First, install the gem:
 
 Then, reference it in your RubyMotion project Rakefile:
 
+    # -*- coding: utf-8 -*-
+    $:.unshift("/Library/RubyMotion/lib")
+    require 'motion/project'
+
     require 'motion-ocr'
 
 And that's it. Build your project and MotionOCR will be ready for action.
