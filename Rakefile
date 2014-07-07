@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 require "bundler/gem_tasks"
 $:.unshift("/Library/RubyMotion/lib")
-require 'motion/project'
+require 'motion/project/template/ios'
 
 Bundler.setup
 Bundler.require
@@ -14,4 +14,3 @@ Motion::Project::App.setup do |app|
   app.deployment_target = '5.0'
 
 end
-
