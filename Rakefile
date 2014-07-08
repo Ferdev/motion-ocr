@@ -7,7 +7,6 @@ Bundler.setup
 Bundler.require
 
 require './lib/motion-ocr'
-require 'motion-support/core_ext/hash'
 
 Motion::Project::App.setup do |app|
   app.name = 'MotionOCR'

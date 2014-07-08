@@ -12,7 +12,8 @@ module Motion
     private
 
     def stringify(hash)
-      hash.with_indifferent_access.stringify_keys
+      stringified = hash.flatten.map(&:to_s)
+      Hash[*stringified]
     end
   end
 end
