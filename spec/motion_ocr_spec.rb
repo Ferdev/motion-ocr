@@ -1,9 +1,9 @@
 # encoding: UTF-8
 
-describe MotionOCR do
+describe Motion::OCR do
 
   it "can detect the text in the sample image" do
-    ocr = MotionOCR.new
+    ocr = Motion::OCR.new
 
     ocr.scan(image 'phototest').should == <<-EOF.gsub(/^\W\W+/, '')
       This is a lot of 12 point text to test the
@@ -20,7 +20,7 @@ describe MotionOCR do
 
   it "accepts the language as parameter" do
     install_language :deu
-    ocr = MotionOCR.alloc.initWithOptions "language" => "deu"
+    ocr = Motion::OCR.new language: "deu"
 
     ocr.scan(image 'phototest_german').should == <<-EOF.gsub(/^\W\W+/, '')
       Weit hinten, hinter den Wortbergen,
@@ -32,6 +32,22 @@ describe MotionOCR do
       Ein kleines Bächlein namens Duden
       fließt durch ihren Ort
       und versorgt sie mit den nötigen Regelialien.
+
+    EOF
+  end
+
+  it "still works with the old constructor" do
+    ocr = MotionOCR.new
+
+    ocr.scan(image 'phototest').should == <<-EOF.gsub(/^\W\W+/, '')
+      This is a lot of 12 point text to test the
+      ocr code and see if it works on all types
+      of file format.
+      The quick brown dog jumped over the
+      lazy fox. The quick brown dog jumped
+      over the lazy fox. The quick brown dog
+      jumped over the lazy fox. The quick
+      brown dog jumped over the lazy fox.
 
     EOF
   end

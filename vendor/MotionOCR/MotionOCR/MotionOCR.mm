@@ -16,7 +16,7 @@
 @implementation MotionOCR
 
 - (id)init {
-  return [self initWithOptions:@{@"language" : @"eng"}];
+  return [self initWithOptions:@{}];
 }
 
 - (id)initWithOptions:(NSDictionary*)options {
