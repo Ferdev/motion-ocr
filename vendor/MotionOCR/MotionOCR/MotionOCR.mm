@@ -16,32 +16,36 @@
 @implementation MotionOCR
 
 - (id)init {
-    self = [super init];
+  return [self initWithOptions:@{@"language" : @"eng"}];
+}
 
-    if (self) {
-        // Set up the tessdata path. This is included in the application bundle
-        // but is copied to the Documents directory on the first run.
-        NSArray *documentPaths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-        NSString *documentPath = ([documentPaths count] > 0) ? [documentPaths objectAtIndex:0] : nil;
+- (id)initWithOptions:(NSDictionary*)options {
+  self = [super init];
 
-        NSString *dataPath = [documentPath stringByAppendingPathComponent:@"tessdata"];
-        NSFileManager *fileManager = [NSFileManager defaultManager];
-        // If the expected store doesn't exist, copy the default store.
-        if (![fileManager fileExistsAtPath:dataPath]) {
-            // get the path to the app bundle (with the tessdata dir)
-            NSString *bundlePath = [[NSBundle mainBundle] bundlePath];
-            NSString *tessdataPath = [bundlePath stringByAppendingPathComponent:@"tessdata"];
-            if (tessdataPath) {
-                [fileManager copyItemAtPath:tessdataPath toPath:dataPath error:NULL];
-            }
-        }
+  if (self) {
+      // Set up the tessdata path. This is included in the application bundle
+      // but is copied to the Documents directory on the first run.
+      NSArray *documentPaths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+      NSString *documentPath = ([documentPaths count] > 0) ? [documentPaths objectAtIndex:0] : nil;
 
-        setenv("TESSDATA_PREFIX", [[documentPath stringByAppendingString:@"/"] UTF8String], 1);
+      NSString *dataPath = [documentPath stringByAppendingPathComponent:@"tessdata"];
+      NSFileManager *fileManager = [NSFileManager defaultManager];
+      // If the expected store doesn't exist, copy the default store.
+      if (![fileManager fileExistsAtPath:dataPath]) {
+          // get the path to the app bundle (with the tessdata dir)
+          NSString *bundlePath = [[NSBundle mainBundle] bundlePath];
+          NSString *tessdataPath = [bundlePath stringByAppendingPathComponent:@"tessdata"];
+          if (tessdataPath) {
+              [fileManager copyItemAtPath:tessdataPath toPath:dataPath error:NULL];
+          }
+      }
 
-        tesseract = new tesseract::TessBaseAPI();
-        tesseract->Init([dataPath cStringUsingEncoding:NSUTF8StringEncoding], "eng");
-    }
-    return self;
+      setenv("TESSDATA_PREFIX", [[documentPath stringByAppendingString:@"/"] UTF8String], 1);
+
+      tesseract = new tesseract::TessBaseAPI();
+      tesseract->Init([dataPath cStringUsingEncoding:NSUTF8StringEncoding], [options[@"language"] UTF8String]);
+  }
+  return self;
 }
 
 - (void)dealloc {
