@@ -18,5 +18,6 @@ namespace tesseract {
     uint32_t *pixels;
 }
 
+- (id)initWithOptions:(NSDictionary*)options;
 - (NSString *)scan:(id)image;
 @end
